@@ -19,17 +19,18 @@
 	</div>
 
 	<?php
-	ini_set('display_startup_errors', 1);
-	ini_set('display_errors', 1);
-	error_reporting(-1);
+	// ini_set('display_startup_errors', 1);
+	// ini_set('display_errors', 1);
+	// error_reporting(-1);
 
 	require 'fun_stuff.php';
+	require 'errors.php';
 
-	$all_comments = 0;
+	// $all_comments = 0;
 
 	?>
 
-	<div class="row">
+	<!-- <div class="row">
 
 		<?php foreach ($adventure as $dude) : ?>
 
@@ -50,14 +51,14 @@
 			<?php $all_comments = $all_comments + $dude['comments'] ?>
 		<?php endforeach ?>
 
-	</div>
+	</div> -->
 
-	<div class="row">
+	<!-- <div class="row">
 		<p>
 			number of dudes: <strong><?php echo count($adventure) ?></strong><br>
 			number of comments: <strong><?php echo $all_comments ?></strong>
 		</p>
-	</div>
+	</div> -->
 
 </body>
 
